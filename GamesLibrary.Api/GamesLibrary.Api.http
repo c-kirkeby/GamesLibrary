@@ -1,6 +1,9 @@
 @GamesLibrary.Api_HostAddress = http://localhost:5032
 
-GET {{GamesLibrary.Api_HostAddress}}/weatherforecast/
+# GET {{GamesLibrary.Api_HostAddress}}/games/
+GET http://localhost:5032/games
 Accept: application/json
 
-###
+### 
+GET http://localhost:5032/games/1
+Accept: application/json
