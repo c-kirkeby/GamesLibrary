@@ -79,4 +79,11 @@ app.MapPut("games/{id:int}", (int id, UpdateGameDto updateGameDto) =>
     return Results.NoContent();
 });
 
+app.MapDelete("games/{id:int}", (int id) =>
+{
+    games.RemoveAll(game => game.Id == id);
+
+    return Results.NoContent();
+});
+
 app.Run();
