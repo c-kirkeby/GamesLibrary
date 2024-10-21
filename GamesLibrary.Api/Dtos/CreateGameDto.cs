@@ -1,6 +1,6 @@
 namespace GamesLibrary.Api.Dtos;
 
-public record GameDto(
+public record CreateGameDto(
     int Id, 
     string Name, 
     int PlayersMin,

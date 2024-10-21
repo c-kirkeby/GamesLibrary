@@ -1,7 +1,6 @@
 namespace GamesLibrary.Api.Dtos;
 
-public record GameDto(
-    int Id, 
+public record UpdateGameDto(
     string Name, 
     int PlayersMin,
     int PlayersMax,
