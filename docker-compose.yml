@@ -1,0 +1,6 @@
+﻿services:
+  gameslibrary.api:
+    image: gameslibrary.api
+    build:
+      context: .
+      dockerfile: GamesLibrary.Api/Dockerfile
